@@ -221,27 +221,10 @@ namespace TesteJason
 
             }
 
-            private void Form1_Load(object sender, EventArgs e)
-            {
-
-            }
-
-        private void cbkSimplesConferencia_CheckedChanged(object sender, EventArgs e)
+        private void RbDetalhado_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbkSimplesConferencia.Checked)
-            {
-                // Mudar os nomes das colunas quando o CheckBox estiver marcado
-                dataGridView1.Columns[0].HeaderText = "Data da venda";
-                dataGridView1.Columns[1].HeaderText = "Hora da venda";
-                dataGridView1.Columns[2].HeaderText = "Status da venda";
-            }
-            else
-            {
-                // Mudar os nomes das colunas quando o CheckBox estiver desmarcado
-                dataGridView1.Columns[0].HeaderText = "Nome 1";
-                dataGridView1.Columns[1].HeaderText = "Nome 2";
-                dataGridView1.Columns[2].HeaderText = "Nome 3";
-            }
+            ClassAcoes acoes = new ClassAcoes();
+            acoes.AlteraGrid(dataGridView1, RbDetalhado);
         }
     }
     } 

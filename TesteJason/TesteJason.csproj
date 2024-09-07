@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cep\BuscaCep.cs" />
+    <Compile Include="controller\ClassAcoes.cs" />
     <Compile Include="controller\ImportExcel.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
